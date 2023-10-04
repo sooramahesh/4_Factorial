@@ -9,26 +9,27 @@
         {
             var number=parseInt(document.getElementById('number').value);
             var factorial=1;
-            if(number<0)
+
+            if (number<0)
             {
-                document.getElementById('result').textContent="Factorial is not defined for negative numbers.";
+                document.getElementById('result').textContent = "Factorial is not defined for negative numbers.";
             }
             else
             {
-                for (vari=1;i<=number;i++)
+                for (var i=1;i<=number;i++)
                 {
                     factorial*=i;
                 }
-                document.getElementById('result').textContent=`Factorial of ${number} is: ${factorial}`;
+                document.getElementById('result').textContent = `Factorial of ${number} is: ${factorial}`;
             }
         }
     </script>
 </head>
 <body>
     <center>
-        <h1>Factorial </h1>
+        <h1>Factorial</h1>
         Enter a number: <input type="text" id="number"><br><br>
-        <button type="button" onclick="Factorial()">Factorial</button>
+        <button type="button" onclick="Factorial()">Calculate Factorial</button>
         <p id="result"></p>
     </center>
 </body>
